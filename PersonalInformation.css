@@ -44,6 +44,7 @@
 img {
     border: 1em solid hotpink;      
     max-width: 20%;
+    height: auto;
 }
 
 
