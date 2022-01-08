@@ -1,0 +1,762 @@
+body {
+    background-image: url(Images/brickworkBackground.jpg);
+    color: white;
+    font-family: 'Rokkitt', Helvetica, Arial, sans-serif;
+}
+
+
+
+
+
+.accordion {
+    background-color: #333;
+    color: #ff64b4;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #ff64b4;
+    text-align: left;
+    outline: none;
+    font-size: 1.5em;
+    transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+    background-color: #333;
+    border-color: #99ff33;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #ff64b4;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: .5em;
+}
+
+/*----------Header--------*/
+#header {
+    max-width: 60%;
+    margin-left: 20em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    opacity: 75%;
+
+}
+
+.copy { 
+    font-size: 0.8em;
+    color: white;
+    text-align: center;
+
+}
+
+/*--------1. Ideal Jobs-------*/
+.idealJobTitles {
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+/*------2. Ideal Job Rank-----------------*/
+
+.idealJobRank {
+
+    font-size: 1.5em;
+    font-weight: 600;
+
+}
+
+.OccGraphFlexContainer {
+    display: flex;
+
+}
+
+.OccGraphFlexContainer p {
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+#OccGraph {
+    max-width: 30%;
+    border: .2em solid #ff64b4;
+    margin-right: .5em;
+    border-radius: .2em;
+}
+
+/*--------------3. Job Skills---------*/
+
+.image-Container {
+    display: flex;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.image-Container img {
+    max-width: 30%;
+    border: .2em solid #ff64b4;
+    border-radius: .2em;
+
+}
+
+#generalSkills {
+    margin-left: auto;
+    margin-right: 1em;
+}
+
+#specificSkills {
+    margin-right: auto;
+    margin-left: 1em;
+}
+
+
+#skills-table table {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: 600;
+    table-layout: fixed;
+    width: 90%;
+    margin-left: 5%;
+
+}
+
+
+
+
+/*--------4. IT-Skills------*/
+
+.ITspecficSkills {
+    display: flex;
+
+}
+
+.ITspecficSkills table {
+
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    font-weight: 600;
+    padding-left: 1em;
+    width: 100%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.ITspecficSkills td:nth-child(2) {
+    text-align: center;
+}
+
+.ITspecficSkills p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0.5em;
+    margin-right: 10%;
+}
+
+/*------5. General Skills--------*/
+
+.ITGenericSkills {
+    display: flex;
+
+}
+
+.ITGenericSkills table {
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    font-weight: 600;
+    padding-left: 1em;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.ITGenericSkills td:nth-child(2) {
+    text-align: center;
+}
+
+.ITGenericSkills p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0.5;
+    margin-right: 10%;
+}
+
+/*------ 6. Ranked IT skills --------*/
+.rankedITspecificSkills {
+    display: flex;
+
+}
+
+.rankedITspecificSkills table {
+
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    font-weight: 600;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    margin-top: 1em;
+
+}
+
+.rankedITspecificSkills td:nth-child(2) {
+    text-align: center;
+}
+
+.rankedITspecificSkills p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-right: 10%;
+}
+
+/*------ 7. Generic IT skills --------*/
+
+.rankedITGenericSkills {
+    display: flex;
+}
+
+.rankedITGenericSkills table {
+    border-collapse: collapse;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 1em;
+    font-weight: 600;
+    width: 100%;
+    margin-top: 1em;
+}
+
+.rankedITGenericSkills td:nth-child(2) {
+    text-align: center;
+}
+
+.rankedITGenericSkills p {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 1em;
+    margin-right: 10%;
+
+}
+
+/*------ 8. Opinion IT skills --------*/
+
+#Opinion table {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: 600;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#Opinion td:nth-child(2) {
+    text-align: center;
+}
+
+/*------ 9. BGTOCCs IT skills --------*/
+
+.BGTOCCsContainer {
+    display: flex;
+    margin-bottom: 2em;
+
+
+}
+
+
+#BGTOCCs {
+    max-width: 30%;
+    margin-right: .5em;
+    border-radius: .2em;
+    border: .2em solid #ff64b4;
+
+
+}
+
+
+
+#BGTOCCstable {
+    border-collapse: collapse;
+    font-size: 1em;
+    font-weight: 600;
+    table-layout: fixed;
+    width: 100%;
+}
+
+#BGTOCCstable td:nth-child(3) {
+    text-align: center;
+}
+
+.BGTOCCsContainer P {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0.5;
+    width: 70%;
+    padding-left: 1em;
+    padding-right: .5em;
+    margin-top: 0;
+}
+
+#BGTOCCsparagraph {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-top: 0.5;
+
+}
+
+/*------ Generic Table styling-----*/
+table tr,
+th,
+td {
+    overflow-x: auto;
+    border: 0.1em solid #ff64b4;
+    
+}
+
+td {
+
+    padding: 1em;
+}
+
+th {
+    
+    color: #00ff00;
+    font-size: 2em;
+    
+}
+
+
+/*-------------------------Media Queries-------------------------*/
+
+@media all and (max-width: 600px) {
+
+    /*----------Header--------*/
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    /*--------1. Ideal Jobs-------*/
+    .idealJobTitles {
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+
+    /*------2. Ideal Job Rank-----------------*/
+
+    .idealJobRank {
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+
+    .OccGraphFlexContainer {
+        display: block;
+    }
+
+    .OccGraphFlexContainer p {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+
+
+    #OccGraph {
+        max-width: 90%;
+        margin-right: 0;
+        margin-left: 1em;
+    }
+
+    /*--------------3. Job Skills---------*/
+
+    .image-Container {
+        display: block;
+
+    }
+
+    .image-Container img {
+        max-width: 90%;
+
+
+    }
+
+    #generalSkills {
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+
+    #specificSkills {
+        margin-right: 1em;
+        margin-left: 1.5em;
+    }
+
+
+    #skills-table table {
+        font-size: 0.8em;
+        font-weight: 400;
+        table-layout: none;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #skills-table ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*--------4. IT-Skills------*/
+
+    .ITspecficSkills {
+        display: block;
+
+    }
+
+    .ITspecficSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ITspecficSkills td:nth-child(2) {
+        text-align: center;
+    }
+
+    .ITspecficSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        margin: auto;
+    }
+
+    /*------5. General Skills--------*/
+
+    .ITGenericSkills {
+        display: block;
+
+    }
+
+    .ITGenericSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ITGenericSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    /*------ 6. Ranked IT skills --------*/
+    .rankedITspecificSkills {
+        display: block;
+
+    }
+
+    .rankedITspecificSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rankedITspecificSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    /*------ 7. Generic IT skills --------*/
+
+    .rankedITGenericSkills {
+        display: block;
+    }
+
+    .rankedITGenericSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rankedITGenericSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+
+    }
+
+    /*------ 8. Opinion IT skills --------*/
+
+    #Opinion table {
+        height: 50%;
+        font-size: .8em;
+        font-weight: 400;
+
+    }
+
+    /*------ 9. BGTOCCs IT skills --------*/
+
+    .BGTOCCsContainer {
+        display: block;
+    }
+
+
+    #BGTOCCs {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #BGTOCCstable {
+        font-size: .8em;
+        font-weight: 500;
+        table-layout: auto;
+        margin-left: 0.3em;
+    }
+
+    .BGTOCCsContainer P {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    #BGTOCCsparagraph {
+        font-size: 1em;
+        font-weight: 500;
+    }
+
+
+}
+
+/*end 600 width*/
+
+@media all and (min-width: 601px) and (max-width:992px) {
+    
+        /*----------Header--------*/
+    #header {
+        margin-left: 20%;
+        margin-top: 1.5em;
+        margin-bottom: 1.5em;
+    }
+
+    /*--------1. Ideal Jobs-------*/
+    .idealJobTitles {
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+
+    /*------2. Ideal Job Rank-----------------*/
+
+    .idealJobRank {
+        font-size: 1.0em;
+        font-weight: 600;
+    }
+
+    .OccGraphFlexContainer {
+        display: block;
+    }
+
+    .OccGraphFlexContainer p {
+        font-size: 0.8em;
+        font-weight: 600;
+        margin-top: 1em;
+    }
+
+
+    #OccGraph {
+        max-width: 90%;
+        margin-right: 0;
+        margin-left: 1em;
+    }
+
+    /*--------------3. Job Skills---------*/
+
+    .image-Container {
+        display: flex;
+
+    }
+
+    .image-Container img {
+        max-width: 50%;
+
+
+    }
+
+    #generalSkills {
+        margin-left: 1.5em;
+        margin-right: 1em;
+    }
+
+    #specificSkills {
+        margin-right: 1em;
+        margin-left: 1.5em;
+    }
+
+
+    #skills-table table {
+        font-size: 0.8em;
+        font-weight: 400;
+        table-layout: none;
+        width: 100%;
+        margin-left: 0%;
+    }
+
+    #skills-table ul {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    /*--------4. IT-Skills------*/
+
+    .ITspecficSkills {
+        display: block;
+
+    }
+
+    .ITspecficSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ITspecficSkills td:nth-child(2) {
+        text-align: center;
+    }
+
+    .ITspecficSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        margin: auto;
+    }
+
+    /*------5. General Skills--------*/
+
+    .ITGenericSkills {
+        display: block;
+
+    }
+
+    .ITGenericSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .ITGenericSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    /*------ 6. Ranked IT skills --------*/
+    .rankedITspecificSkills {
+        display: block;
+
+    }
+
+    .rankedITspecificSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rankedITspecificSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    /*------ 7. Generic IT skills --------*/
+
+    .rankedITGenericSkills {
+        display: block;
+    }
+
+    .rankedITGenericSkills table {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .rankedITGenericSkills p {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+
+    }
+
+    /*------ 8. Opinion IT skills --------*/
+
+    #Opinion table {
+        height: 50%;
+        font-size: .8em;
+        font-weight: 400;
+
+    }
+
+    /*------ 9. BGTOCCs IT skills --------*/
+
+    .BGTOCCsContainer {
+        display: block;
+    }
+
+
+    #BGTOCCs {
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    #BGTOCCstable {
+        font-size: .8em;
+        font-weight: 500;
+        table-layout: auto;
+        margin-left: 0.3em;
+    }
+
+    .BGTOCCsContainer P {
+        font-size: 1em;
+        font-weight: 600;
+        text-align: center;
+        padding-top: 0.5em;
+        margin: auto;
+    }
+
+    #BGTOCCsparagraph {
+        font-size: 1em;
+        font-weight: 500;
+    }
+    
+    
+    
+    
+}
+
+@media all and (min-width: 993px) and (max-width:1200px) {}
+
+
+@media all and (min-width: 1201px) and (max-width:1420px) {}
+
+@media all and (min-width:1421px) and (max-width:1450px) {}
